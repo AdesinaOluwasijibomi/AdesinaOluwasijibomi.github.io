@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Siji Adesina, Growth &amp; GTM">
+<meta property="og:description" content="Go-to-market strategy, revenue growth and enterprise sales. From a family farm in Ibadan to app growth at Google.">
+<meta property="og:image" content="img/portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Siji Adesina, Growth &amp; GTM</title>
+<meta name="description" content="Oluwasijibomi (Siji) Adesina — go-to-market strategy, revenue growth and enterprise sales leader. Senior App Growth Manager at Google for Israel, the Middle East and Africa, based in Dublin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..800&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an indigo adire band opens with the portrait tagged like market stock; capability bar, then proof, then a priced ledger in two chapters. Fraunces carries the voice, Archivo the argument, Plex Mono the ledger. */
+:root{
+  --paper:#edeff4; --surface:#ffffff; --ink:#131a3d; --ink-soft:#4b5376; --rule:#d2d6e2; --rule-soft:#e2e5ee;
+  --indigo:#1b2a66; --indigo-deep:#101845; --on-indigo:#e8ebf7; --on-indigo-dim:#aab3dd;
+  --brass:#9a6c15; --tag:#e8b642; --tag-ink:#2a2208; --kola:#8c2f3f;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0d1130; --surface:#151a3d; --ink:#e7eaf7; --ink-soft:#a8aecd; --rule:#2a3160; --rule-soft:#1e2550;
+  --indigo:#182257; --indigo-deep:#090d26; --on-indigo:#e8ebf7; --on-indigo-dim:#a3abd6;
+  --brass:#e6b14f; --tag:#e8b642; --tag-ink:#2a2208; --kola:#cf8294; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0d1130; --surface:#151a3d; --ink:#e7eaf7; --ink-soft:#a8aecd; --rule:#2a3160; --rule-soft:#1e2550;
+  --indigo:#182257; --indigo-deep:#090d26; --on-indigo:#e8ebf7; --on-indigo-dim:#a3abd6;
+  --brass:#e6b14f; --tag:#e8b642; --tag-ink:#2a2208; --kola:#cf8294; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:600;font-variation-settings:"opsz" 96;letter-spacing:-.015em;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.05}
+h3{font-size:1.35rem;line-height:1.15}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.measure{max-width:62ch}
+
+.stitch{height:13px;color:var(--kola);opacity:.85;
+  background:linear-gradient(135deg,currentColor 25%,transparent 25%) 0 0/13px 13px,
+             linear-gradient(225deg,currentColor 25%,transparent 25%) 0 0/13px 13px}
+
+/* ---------- Hero ---------- */
+.band{background:var(--indigo);color:var(--on-indigo);position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;opacity:.11;pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 9px, var(--on-indigo) 10px, var(--on-indigo) 11px, transparent 12px) 0 0/46px 46px,
+    radial-gradient(circle at 50% 50%, var(--on-indigo) 2.5px, transparent 3px) 23px 23px/46px 46px;
+  -webkit-mask-image:linear-gradient(105deg,#000 0%,transparent 58%);mask-image:linear-gradient(105deg,#000 0%,transparent 58%)}
+.nav{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding-block:24px;position:relative;font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase}
+.nav b{font-family:var(--display);font-weight:700;font-size:1.45rem;letter-spacing:-.01em;text-transform:none}
+.nav b span{color:var(--tag)}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav a{text-decoration:none;color:var(--on-indigo-dim)}
+.nav a:hover{color:var(--on-indigo);text-decoration:underline;text-underline-offset:5px}
+.hero{position:relative;padding-block:44px 24px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:52px;align-items:center}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.kicker{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tag)}
+h1{font-size:clamp(2.9rem,7.4vw,5.6rem);line-height:.98;font-weight:700;letter-spacing:-.03em}
+h1 em{font-style:italic;color:var(--tag);font-weight:600}
+.sub{font-family:var(--mono);font-size:clamp(.82rem,1.4vw,.95rem);letter-spacing:.04em;line-height:1.6;color:var(--on-indigo);max-width:48ch}
+.lede{max-width:50ch;font-size:1.1rem;color:var(--on-indigo-dim)}
+.lede strong{font-weight:500;color:var(--on-indigo)}
+.portrait{margin:0;justify-self:end;width:100%;max-width:360px}
+.portrait .shot{position:relative}
+.portrait img{aspect-ratio:3/4;object-fit:cover;width:100%;box-shadow:13px 13px 0 var(--kola)}
+.portrait .tag{position:absolute;left:-24px;bottom:30px}
+.portrait figcaption{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-indigo-dim);margin-top:20px}
+
+/* capability bar */
+.capbar{position:relative;border-top:1px solid rgba(232,235,247,.22);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:34px}
+.capbar div{padding:20px 20px 26px 0;min-width:0}
+.capbar div+div{padding-left:20px;border-left:1px solid rgba(232,235,247,.22)}
+.capbar dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tag);margin-bottom:7px}
+.capbar dd{margin:0;font-size:.95rem;line-height:1.45;color:var(--on-indigo-dim)}
+
+/* price tag */
+.tag{position:relative;background:var(--tag);color:var(--tag-ink);font-family:var(--display);padding:11px 15px 12px 26px;transform:rotate(-2.5deg);clip-path:polygon(13px 0,100% 0,100% 100%,13px 100%,0 50%);line-height:1;width:max-content;max-width:100%}
+.tag::before{content:"";position:absolute;left:8px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:var(--paper)}
+.tag strong{display:block;font-size:1.75rem;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.tag small{display:block;font-family:var(--mono);font-size:.63rem;letter-spacing:.06em;text-transform:uppercase;margin-top:5px;font-weight:500}
+
+/* ---------- Sections ---------- */
+section{padding-block:76px}
+.sec-head{display:grid;gap:12px;margin-bottom:34px;max-width:56ch}
+.sec-head p{color:var(--ink-soft);font-size:1.08rem}
+
+/* Today */
+.today{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start;padding-block:72px;border-bottom:1px solid var(--rule)}
+.today .role{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--kola);margin-top:16px;line-height:1.6}
+.today-body{display:grid;gap:16px}
+.today-body p{max-width:58ch}
+.who{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.who span{border:1px solid var(--rule);padding:6px 12px;border-radius:2px;color:var(--ink-soft)}
+
+/* Skills */
+.skills{border-bottom:1px solid var(--rule)}
+.skillgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.skillgrid article{background:var(--paper);padding:26px 26px 28px;display:grid;gap:12px;align-content:start;min-width:0}
+.skillgrid .num{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;color:var(--kola);font-variant-numeric:tabular-nums}
+.skillgrid h3{font-size:1.3rem}
+.skillgrid p{color:var(--ink-soft);font-size:.98rem;max-width:46ch}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px;list-style:none;padding:0}
+.chips li{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;color:var(--ink);background:var(--surface);border:1px solid var(--rule-soft);padding:5px 9px;border-radius:2px}
+
+/* Values */
+.values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding-block:70px;border-bottom:1px solid var(--rule)}
+.values div{padding:0 30px 0 0;display:grid;gap:9px;align-content:start}
+.values div+div{padding-left:30px;border-left:1px solid var(--rule)}
+.values h3{font-size:1.9rem;font-weight:700}
+.values p{color:var(--ink-soft);max-width:32ch}
+
+/* Climb */
+.climb{padding-block:72px;border-bottom:1px solid var(--rule)}
+.climb-head{display:grid;gap:12px;margin-bottom:10px;max-width:48ch}
+.climb-head p{color:var(--ink-soft)}
+.climb-fig{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:38px;align-items:center;margin-top:20px}
+.climb-svg{min-width:0;overflow-x:auto}
+.climb-svg svg{width:100%;height:auto;display:block}
+.climb-svg .track{fill:none;stroke:var(--rule);stroke-width:2.5;stroke-dasharray:7 8;stroke-linecap:round}
+.climb-svg .progress{fill:none;stroke:var(--kola);stroke-width:3.5;stroke-linecap:round}
+.climb-svg .ground{stroke:var(--kola);opacity:.5;stroke-width:2.5;fill:none;stroke-linecap:round}
+.climb-svg .podium{fill:none;stroke:var(--kola);stroke-width:2.5}
+.stop{cursor:pointer}
+.stop circle{fill:var(--paper);stroke:var(--ink);stroke-width:2.5}
+.stop text{font-family:var(--mono);font-size:15px;letter-spacing:.08em;text-transform:uppercase;fill:var(--ink-soft)}
+.stop:hover circle{fill:var(--tag)}
+.stop[aria-pressed="true"] circle{fill:var(--tag)}
+.stop[aria-pressed="true"] text{fill:var(--ink)}
+.stop:focus-visible{outline:none}
+.stop:focus-visible circle{stroke:var(--kola);stroke-width:4}
+.climb-card{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--kola);padding:24px;display:grid;gap:11px;align-content:start;min-width:0}
+.climb-card .yrs{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--kola);font-variant-numeric:tabular-nums}
+.climb-card h3{font-size:1.5rem}
+.climb-card p{font-size:.99rem}
+.climb-hint{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:14px}
+
+/* Chapters + ledger */
+.chapter{display:grid;gap:12px;margin-bottom:32px;max-width:58ch}
+.chapter p{color:var(--ink-soft);font-size:1.08rem}
+.chapter-two{margin-top:92px}
+
+.filter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 22px;font-family:var(--mono);font-size:.78rem}
+.filter span{color:var(--ink-soft);margin-right:6px;letter-spacing:.06em;text-transform:uppercase}
+.filter button{font:inherit;cursor:pointer;background:transparent;color:var(--ink);border:1px solid var(--rule);padding:7px 14px;border-radius:2px}
+.filter button:hover{border-color:var(--ink)}
+.filter button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+.ledger{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.entry{display:grid;grid-template-columns:minmax(0,12rem) minmax(0,1fr) 9.5rem;gap:18px 38px;padding-block:30px;border-bottom:1px solid var(--rule);align-items:start}
+.where{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);display:grid;gap:6px;padding-top:6px}
+.where i{font-style:normal;color:var(--ink);font-weight:500}
+.where .yr{font-variant-numeric:tabular-nums;color:var(--kola)}
+.entry h3{font-size:1.5rem;margin-bottom:10px}
+.entry p{margin-bottom:12px;max-width:60ch}
+.entry p:last-of-type{margin-bottom:0}
+.lessons{display:flex;gap:9px;margin-top:14px;flex-wrap:wrap;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.entry .tag{justify-self:end}
+.entry:nth-child(even) .tag{transform:rotate(2deg)}
+
+.ladder{list-style:none;margin:16px 0 0;padding:0;border-left:2px solid var(--kola);display:grid;gap:9px}
+.ladder li{padding-left:16px;font-family:var(--mono);font-size:.76rem;line-height:1.5;color:var(--ink-soft)}
+.ladder b{color:var(--ink);font-weight:500}
+.ladder em{font-style:normal;color:var(--kola);font-variant-numeric:tabular-nums}
+
+/* Crew */
+.crew{background:var(--indigo-deep);color:var(--on-indigo)}
+.crew .wrap{padding-block:76px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:center}
+.crew blockquote{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.04;letter-spacing:-.02em;text-wrap:balance}
+.crew blockquote em{font-style:italic;color:var(--tag)}
+.crew p{margin-top:20px;color:var(--on-indigo-dim);max-width:44ch}
+.crew figure{margin:0}
+.crew figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.crew figcaption{font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--on-indigo-dim);margin-top:11px}
+
+/* School */
+.edu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
+.edu article{padding:24px 24px 28px 0;border-right:1px solid var(--rule);display:grid;gap:9px;align-content:start}
+.edu article+article{padding-left:24px}
+.edu article:last-child{border-right:0}
+.edu h3{font-size:1.4rem}
+.edu p{color:var(--ink-soft)}
+.edu .mark{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--kola)}
+.alsolang{margin-top:26px;color:var(--ink-soft);font-family:var(--mono);font-size:.76rem;letter-spacing:.03em;line-height:1.7;max-width:70ch}
+
+/* Contact */
+.contact{border-top:2px solid var(--ink);padding-top:34px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:end}
+.contact p{margin-top:14px;color:var(--ink-soft);max-width:48ch}
+.mail{display:grid;gap:11px;justify-items:start}
+.mail .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.mail code{font-family:var(--mono);font-size:1rem;background:var(--surface);border:1px solid var(--rule);padding:11px 14px;user-select:all;overflow-wrap:anywhere}
+.mail button{font-family:var(--mono);font-size:.82rem;cursor:pointer;background:var(--tag);color:var(--tag-ink);border:0;padding:12px 16px;border-radius:2px;font-weight:500}
+.mail a{font-family:var(--mono);font-size:.8rem;color:var(--ink-soft);text-underline-offset:3px}
+.mail a:hover{color:var(--ink)}
+footer{padding-block:34px 46px;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr);gap:40px}
+  .portrait{justify-self:start;max-width:300px;margin-left:20px}
+  .capbar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .capbar div:nth-child(3),.capbar div:nth-child(4){border-top:1px solid rgba(232,235,247,.22)}
+  .capbar div:nth-child(3){padding-left:0;border-left:0}
+  .today{grid-template-columns:minmax(0,1fr);gap:26px}
+  .skillgrid{grid-template-columns:minmax(0,1fr)}
+  .values{grid-template-columns:minmax(0,1fr);gap:28px}
+  .values div,.values div+div{padding:0;border-left:0}
+  .climb-fig{grid-template-columns:minmax(0,1fr);gap:22px}
+  .climb-svg svg{min-width:600px}
+  .entry{grid-template-columns:minmax(0,1fr);gap:12px}
+  .where{grid-auto-flow:column;justify-content:start;gap:14px;padding-top:0}
+  .entry .tag{justify-self:start;margin-top:6px}
+  .crew .wrap{grid-template-columns:minmax(0,1fr)}
+  .edu{grid-template-columns:minmax(0,1fr)}
+  .edu article,.edu article+article{padding:22px 0;border-right:0;border-bottom:1px solid var(--rule)}
+  .contact{grid-template-columns:minmax(0,1fr)}
+  section{padding-block:58px}
+}
+@media (max-width:520px){
+  .capbar{grid-template-columns:minmax(0,1fr)}
+  .capbar div,.capbar div+div{padding-left:0;border-left:0;border-top:1px solid rgba(232,235,247,.22);padding-block:16px 18px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .entry .tag{transition:transform .25s ease}
+  .entry:hover .tag{transform:rotate(0) scale(1.04)}
+  .climb-svg .progress{transition:stroke-dashoffset .5s ease}
+  .stop circle{transition:fill .2s ease}
+}
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <b>Siji<span>.</span></b>
+      <ul>
+        <li><a href="#today">Today</a></li>
+        <li><a href="#skills">What I do</a></li>
+        <li><a href="#climb">The climb</a></li>
+        <li><a href="#ground">Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="kicker">Oluwasijibomi “Siji” Adesina · Dublin, Ireland</div>
+        <h1>Farm to <em>deal room.</em></h1>
+        <p class="sub">Go-to-market strategy, revenue growth and enterprise sales. UK and Ireland, Israel, the Middle East, Africa and international markets.</p>
+        <p class="lede">I learned what things are worth on a farm, in a Lagos market and in a family kitchen, long before I knew it was strategy. The rule hasn’t changed: respect <strong>money</strong>, <strong>time</strong> and <strong>people</strong>, and the revenue follows.</p>
+      </div>
+      <figure class="portrait">
+        <div class="shot">
+          <img src="img/portrait.jpg" alt="Siji Adesina, go-to-market and revenue growth leader, at Hult International Business School">
+          <div class="tag"><strong>Siji</strong><small>Open to a good chat</small></div>
+        </div>
+        <figcaption>Hult International Business School · EMBA in progress</figcaption>
+      </figure>
+    </div>
+    <dl class="capbar">
+      <div><dt>Go-to-market</dt><dd>Market entry and expansion planning across EMEA</dd></div>
+      <div><dt>Revenue growth</dt><dd>Portfolio strategy tied to P&amp;L, not to activity</dd></div>
+      <div><dt>Enterprise sales</dt><dd>Deals and partnerships at CEO, CMO and CFO level</dd></div>
+      <div><dt>App &amp; AI growth</dt><dd>Google’s app and AI technology, turned into profit</dd></div>
+    </dl>
+  </div>
+</header>
+<div class="stitch" aria-hidden="true"></div>
+
+<main>
+<div class="wrap">
+  <section class="today" id="today">
+    <div>
+      <span class="eyebrow">What I do now</span>
+      <h2>I sell growth, and then I go and build it</h2>
+      <p class="role">Senior App Growth Manager, Emerging Markets<br>Google · Dublin</p>
+    </div>
+    <div class="today-body">
+      <p>I own the growth strategy for a portfolio of 20+ top businesses across Israel, the Middle East and Africa, working with the people who carry the number: CEOs, CMOs and CFOs. My job is to turn what Google’s app and AI technology can do into profit they can point at on a P&amp;L.</p>
+      <p>That means the strategy, not the demo. Where should the next marketing euro go? Which market is worth entering this year, and what does entry actually cost? What does the model have to return before finance will fund it? I answer those questions, agree the plan in the room, and stay on the hook for the result.</p>
+      <p>Before Google I did the same work from the other side of the table: launching fintech products, negotiating with KYC and verification vendors, and delivering a $1M+ education programme in Rwanda. Selling a plan and shipping one are the same discipline at different hours of the day.</p>
+      <div class="who" aria-label="What the role covers">
+        <span>C-level engagement</span><span>Sales</span><span>Go-to-market</span><span>Delivery</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Capabilities</span>
+      <h2>What I’m hired for</h2>
+      <p>Different labels, one outcome: more revenue, earned in a way the customer wants to repeat.</p>
+    </div>
+    <div class="skillgrid">
+      <article>
+        <span class="num">01</span>
+        <h3>Go-to-market strategy</h3>
+        <p>Deciding where a business plays and how it wins there, then writing the plan that gets funded. I've done this work in developed markets across the UK and Ireland, and in emerging markets where the data is thinner and the judgement matters more.</p>
+        <ul class="chips"><li>Market entry</li><li>Expansion planning</li><li>Portfolio &amp; territory strategy</li><li>Competitive positioning</li><li>Launch planning</li><li>UK &amp; Ireland</li><li>Emerging markets</li></ul>
+      </article>
+      <article>
+        <span class="num">02</span>
+        <h3>Revenue generation</h3>
+        <p>Building the case for spend and then holding it to account. I work backwards from the P&amp;L: what has to be true for this investment to pay, and what we change the quarter it doesn’t.</p>
+        <ul class="chips"><li>Revenue strategy</li><li>Forecasting</li><li>Pipeline &amp; portfolio growth</li><li>Investment cases</li><li>Marketing ROI</li><li>Incrementality</li></ul>
+      </article>
+      <article>
+        <span class="num">03</span>
+        <h3>Enterprise sales</h3>
+        <p>Selling to the people who sign. That means fewer features and more consequences: what this does to margin, to share, to the number they report. Then the negotiation, and the trust to be called before the next decision.</p>
+        <ul class="chips"><li>C-suite partnership</li><li>Consultative selling</li><li>Negotiation</li><li>Multi-stakeholder deals</li><li>Account leadership</li><li>Sales coaching</li></ul>
+      </article>
+      <article>
+        <span class="num">04</span>
+        <h3>App &amp; digital growth</h3>
+        <p>The technical half of the job. App campaigns, measurement that survives scrutiny, and AI-powered bidding and creative used properly rather than switched on and hoped over.</p>
+        <ul class="chips"><li>App campaigns</li><li>AI-powered bidding</li><li>Creative strategy</li><li>Measurement</li><li>Performance diagnostics</li><li>Web &amp; app technology</li></ul>
+      </article>
+      <article>
+        <span class="num">05</span>
+        <h3>Delivery &amp; operations</h3>
+        <p>Strategy nobody ships is a slide. I’ve run cross-functional programmes in fintech and education, which is where I learned that a launch date is a promise to somebody.</p>
+        <ul class="chips"><li>Programme management</li><li>Cross-functional delivery</li><li>Partner SLAs</li><li>Vendor negotiation</li><li>KYC &amp; compliance launches</li></ul>
+      </article>
+      <article>
+        <span class="num">06</span>
+        <h3>How I work</h3>
+        <p>Nigerian-raised, Rwandan-schooled, Dublin-based, and used to being the person who translates between the market and the model. I’d rather bring a smaller number I can defend than a big one I can’t.</p>
+        <ul class="chips"><li>Emerging markets</li><li>EMEA &amp; UK/Ireland</li><li>English &amp; Yoruba</li><li>Hiring &amp; interviewing</li><li>Team coaching</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="values" aria-label="The three things I price everything by">
+    <div><span class="eyebrow">Lesson one</span><h3>Money</h3><p>Buy right, add care, sell to the person who values it most.</p></div>
+    <div><span class="eyebrow">Lesson two</span><h3>Time</h3><p>Plant this season for next season. Deadlines are just harvest dates.</p></div>
+    <div><span class="eyebrow">Lesson three</span><h3>People</h3><p>The best deal leaves every side better off and wanting a second round.</p></div>
+  </div>
+
+  <section class="climb" id="climb">
+    <div class="climb-head">
+      <span class="eyebrow">The climb</span>
+      <h2>Farm to podium, one stop at a time</h2>
+      <p>Six places did most of the teaching. Pick one.</p>
+    </div>
+    <div class="climb-fig">
+      <div class="climb-svg">
+        <svg viewBox="0 0 900 380" role="group" aria-label="Interactive illustration of Siji's path from the family farm in Ibadan to Google in Dublin">
+          <path class="ground" d="M24,356 q11,-7 22,0 t22,0 t22,0 M38,368 q11,-7 22,0 t22,0"/>
+          <g class="podium" aria-hidden="true">
+            <rect x="802" y="6" width="56" height="34" rx="3"/>
+            <path d="M830,40 V50 M814,50 H846"/>
+          </g>
+          <path class="track" d="M60,308 C84.2,300.3 155.8,272.8 205,262 C254.2,251.2 305.0,257.0 355,243 C405.0,229.0 455.0,194.2 505,178 C555.0,161.8 600.8,165.3 655,146 C709.2,126.7 800.8,76.0 830,62"/>
+          <path class="progress" id="prog" style="stroke-dasharray:815.2;stroke-dashoffset:801.2" d="M60,308 C84.2,300.3 155.8,272.8 205,262 C254.2,251.2 305.0,257.0 355,243 C405.0,229.0 455.0,194.2 505,178 C555.0,161.8 600.8,165.3 655,146 C709.2,126.7 800.8,76.0 830,62"/>
+          <g class="stop" data-i="0" tabindex="0" role="button" aria-pressed="true" aria-label="The farm, Ibadan"><circle cx="60" cy="308" r="10"/><text x="60" y="340" text-anchor="middle">The farm</text></g>
+          <g class="stop" data-i="1" tabindex="0" role="button" aria-pressed="false" aria-label="Katangua market, Lagos"><circle cx="205" cy="262" r="10"/><text x="205" y="294" text-anchor="middle">Katangua</text></g>
+          <g class="stop" data-i="2" tabindex="0" role="button" aria-pressed="false" aria-label="Kuda, Lagos, 2019"><circle cx="355" cy="243" r="10"/><text x="355" y="275" text-anchor="middle">Kuda</text></g>
+          <g class="stop" data-i="3" tabindex="0" role="button" aria-pressed="false" aria-label="Kigali, 2020 to 2022"><circle cx="505" cy="178" r="10"/><text x="505" y="210" text-anchor="middle">Kigali</text></g>
+          <g class="stop" data-i="4" tabindex="0" role="button" aria-pressed="false" aria-label="Research and fintech operations, 2021 to 2022"><circle cx="655" cy="146" r="10"/><text x="655" y="178" text-anchor="middle">Research</text></g>
+          <g class="stop" data-i="5" tabindex="0" role="button" aria-pressed="false" aria-label="Google, Dublin, 2022 to now"><circle cx="830" cy="62" r="10"/><text x="830" y="94" text-anchor="middle">Google</text></g>
+        </svg>
+        <p class="climb-hint">Tap a stop, or use arrow keys</p>
+      </div>
+      <div class="climb-card" aria-live="polite">
+        <span class="yrs" id="c-yrs">Before everything</span>
+        <h3 id="c-ttl">The farm &amp; the garden</h3>
+        <p id="c-txt">Poultry, then catfish, then pigs, and a garden of yam, cocoyam and mango. Feed, weather and market day all ran on one clock. Miss it and you lose the season.</p>
+        <div class="lessons" id="c-les"><span>Money</span><span>Time</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="ground">
+  <div class="wrap">
+    <div class="chapter">
+      <span class="eyebrow">Chapter one · No dates, nobody was keeping records</span>
+      <h2>The ground floor</h2>
+      <p>No titles, no payslips, no CRM. Just ponds to drain, stalls to haggle at and dishes to taste. My first margins, my first customers, and every commercial instinct I still use.</p>
+    </div>
+
+    <div class="filter" role="group" aria-label="Show roles by lesson">
+      <span>Show what taught me</span>
+      <button type="button" id="f-all" data-f="all" aria-pressed="true">Everything</button>
+      <button type="button" id="f-money" data-f="money" aria-pressed="false">Money</button>
+      <button type="button" id="f-time" data-f="time" aria-pressed="false">Time</button>
+      <button type="button" id="f-people" data-f="people" aria-pressed="false">People</button>
+    </div>
+
+    <ol class="ledger">
+      <li class="entry" data-v="money time">
+        <div class="where"><i>Family farm</i><span>Poultry · Catfish · Pigs</span></div>
+        <div>
+          <h3>Assistant farmer</h3>
+          <p>Poultry first, then catfish, then pigs. My favourite day was harvest: pond drained, me knee-deep in mud, catching fish for sale. By the end I was co-managing a pig farm of more than 200 animals, where feed cost, weight and market day all had to line up or the margin vanished.</p>
+          <div class="lessons"><span>Money</span><span>Time</span></div>
+        </div>
+        <div class="tag"><strong>200+</strong><small>pigs co-managed</small></div>
+      </li>
+      <li class="entry" data-v="time">
+        <div class="where"><i>The garden</i><span>Mango · Cocoyam · Yam</span></div>
+        <div>
+          <h3>Assistant gardener</h3>
+          <p>You plant yam this season to eat next season. Mango takes years. Gardening taught me to commit early and wait well, which is most of forecasting.</p>
+          <div class="lessons"><span>Time</span></div>
+        </div>
+        <div class="tag"><strong>Seasons</strong><small>planned ahead</small></div>
+      </li>
+      <li class="entry" data-v="people">
+        <div class="where"><i>A&amp;A Catering</i><span>Family business</span></div>
+        <div>
+          <h3>Guest relations &amp; chief taster</h3>
+          <p>Local and intercontinental menus for high-end events. Officially, I looked after guests. Unofficially, I tasted the favourite dishes before anyone else, then carried them out with a joke ready. Good service is what sells the second plate.</p>
+          <div class="lessons"><span>People</span></div>
+        </div>
+        <div class="tag"><strong>Every</strong><small>dish tasted first</small></div>
+      </li>
+      <li class="entry" data-v="money people">
+        <div class="where"><i>Katangua Market</i><span>Lagos</span></div>
+        <div>
+          <h3>Professional shopper</h3>
+          <p>I combed Katangua for the best pre-loved clothes, gave them a proper clean and dry-clean, and sold them to my schoolmates at King’s College. Buy well, add value, sell to a customer you understand. That was the whole business, and it still is.</p>
+          <div class="lessons"><span>Money</span><span>People</span></div>
+        </div>
+        <div class="tag"><strong>Thrift</strong><small>cleaned &amp; resold</small></div>
+      </li>
+      <li class="entry" data-v="money">
+        <div class="where"><i>Lagos → Kigali</i><span>Student venture</span></div>
+        <div>
+          <h3>Jewellery reseller</h3>
+          <p>I picked select pieces in Lagos markets and sold them into a different market in Kigali, at double. Choosing well beat buying in bulk. Curation is a product, and arbitrage is a go-to-market plan with no slides.</p>
+          <div class="lessons"><span>Money</span></div>
+        </div>
+        <div class="tag"><strong>100%</strong><small>premium on picks</small></div>
+      </li>
+      <li class="entry" data-v="people money">
+        <div class="where"><i>#enjoywithdesh</i><span>Curated evenings</span></div>
+        <div>
+          <h3>Curator &amp; host</h3>
+          <p>Three evenings for entrepreneurial people tired of stiff networking events. I brought the guests; private restaurants and young ventures brought the space. They got new customers through the door, guests got a room worth being in, and I was paid a fee plus extras for filling it. My first partnership deal, priced three ways.</p>
+          <div class="lessons"><span>People</span><span>Money</span></div>
+        </div>
+        <div class="tag"><strong>3</strong><small>evenings hosted</small></div>
+      </li>
+    </ol>
+
+    <div class="chapter chapter-two" id="build">
+      <span class="eyebrow">Chapter two · On the record</span>
+      <h2>The build</h2>
+      <p>Same instincts, bigger stakes. Now there were partners to manage, regulators to satisfy, revenue targets to hit and launch dates that didn’t move.</p>
+    </div>
+
+    <ol class="ledger">
+      <li class="entry" data-v="time people">
+        <div class="where"><span class="yr">2019</span><i>Kuda Bank</i><span>Lagos · Fintech</span></div>
+        <div>
+          <h3>Project manager</h3>
+          <p>I joined when it was still Kudimoney. Working beside the Group PM and product owner, I kept workstreams moving and partner SLAs honest. When the microfinance bank licence came through, we worked to get Kuda listed alongside the established banks. It’s now one of Nigeria’s best-known digital banks.</p>
+          <div class="lessons"><span>Time</span><span>People</span></div>
+        </div>
+        <div class="tag"><strong>Early</strong><small>before the rename</small></div>
+      </li>
+      <li class="entry" data-v="money people time">
+        <div class="where"><span class="yr">2020–21</span><i>Vatel Rwanda</i><span>Mastercard Foundation</span></div>
+        <div>
+          <h3>Senior project manager, CRRP intervention</h3>
+          <p>Covid closed Rwanda’s hotels and, with them, the training pipeline for an industry the country depends on. I drove the initiatives behind a $1M+ Mastercard Foundation e-learning programme, from curriculum design to video production to getting it in front of learners. More than 600 students have enrolled.</p>
+          <div class="lessons"><span>Money</span><span>People</span><span>Time</span></div>
+        </div>
+        <div class="tag"><strong>600+</strong><small>students enrolled</small></div>
+      </li>
+      <li class="entry" data-v="people time">
+        <div class="where"><span class="yr">2020–22</span><i>African Leadership University</i><span>Kigali</span></div>
+        <div>
+          <h3>Senior residential advisor &amp; FabLab project manager</h3>
+          <p>Two jobs on one campus. I built the systems and processes behind ALU’s FabLab so the entrepreneurship cohort could actually use it, and served as senior residential advisor to students from more than 40 African countries. Keeping that hall running was a masterclass in managing stakeholders who all think they are the priority.</p>
+          <div class="lessons"><span>People</span><span>Time</span></div>
+        </div>
+        <div class="tag"><strong>40+</strong><small>countries, one hall</small></div>
+      </li>
+      <li class="entry" data-v="money">
+        <div class="where"><span class="yr">2021–22</span><i>BLK Capital Management</i><span>Cambridge, MA</span></div>
+        <div>
+          <h3>Equity research analyst</h3>
+          <p>A student-run investment fund where the research has to survive a committee. It taught me to put a number on a story and defend the assumptions behind it, which is exactly what a growth case is.</p>
+          <div class="lessons"><span>Money</span></div>
+        </div>
+        <div class="tag"><strong>Research</strong><small>that had to hold up</small></div>
+      </li>
+      <li class="entry" data-v="time money">
+        <div class="where"><span class="yr">2022</span><i>9jaPay</i><span>Africa Fintech Ltd</span></div>
+        <div>
+          <h3>Senior technology operations analyst</h3>
+          <p>I started and led a cross-functional project across engineering, product and operations to find where delivery was getting stuck, and fixed it. The product shipped and now serves hundreds of Nigerian users.</p>
+          <div class="lessons"><span>Time</span><span>Money</span></div>
+        </div>
+        <div class="tag"><strong>Shipped</strong><small>and still running</small></div>
+      </li>
+      <li class="entry" data-v="money people time">
+        <div class="where"><span class="yr">2022–now</span><i>Google</i><span>Dublin</span></div>
+        <div>
+          <h3>Four years, four seats</h3>
+          <p>I came in as an associate account manager and was fast-tracked inside a year, in the 99th percentile for growth delivered to the businesses I supported. Each move since has widened the remit: from multi-channel and lead-gen accounts in the UK and Ireland, to a mid-market portfolio as strategy lead, to app growth across Israel, the Middle East and Africa.</p>
+          <ol class="ladder">
+            <li><em>2026–</em> <b>Senior App Growth Manager</b>, Emerging Markets (Israel, Middle East &amp; Africa)</li>
+            <li><em>2025</em> <b>Senior Strategic Client Partner</b>, Mid-Market UK &amp; Ireland</li>
+            <li><em>2023</em> <b>Account Manager</b>, Lead Gen sector UKI</li>
+            <li><em>2022</em> <b>Associate Account Manager</b>, Multi-Channel UKI</li>
+          </ol>
+          <p style="margin-top:14px">Alongside the portfolio: interim portfolio strategy lead, sales coach, hiring interviewer, Global Spark subject-matter expert, and SMB revenue pillar lead for a 40-person group.</p>
+          <div class="lessons"><span>Money</span><span>People</span><span>Time</span></div>
+        </div>
+        <div class="tag"><strong>&lt;1 yr</strong><small>to first promotion</small></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<div class="stitch" aria-hidden="true"></div>
+<div class="crew">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color:var(--tag)">The thread</span>
+      <blockquote>Same job, bigger field: find the value, <em>then share it.</em></blockquote>
+      <p>Revenue is a team sport. The deals I’m proudest of were built with people who made the work worth showing up for.</p>
+    </div>
+    <figure>
+      <img src="img/team.jpg" alt="Siji with his Google Ireland team at a summer office event">
+      <figcaption>Google Ireland. I’m the one in the deck chair.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section id="school">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Education</span>
+      <h2>School</h2>
+    </div>
+    <div class="edu">
+      <article>
+        <span class="mark">Lagos</span>
+        <h3>King’s College Lagos</h3>
+        <p>Distinctions in every subject. McKee-Wright House Captain and Cadet Vice Commandant.</p>
+      </article>
+      <article>
+        <span class="mark">Kigali</span>
+        <h3>African Leadership University</h3>
+        <p>International Business and Trade. First-class student.</p>
+      </article>
+      <article>
+        <span class="mark">London · In progress</span>
+        <h3>Hult International Business School</h3>
+        <p>Executive MBA.</p>
+      </article>
+    </div>
+    <p class="alsolang">Languages: Yoruba and English, both native.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Got something worth growing?</h2>
+        <p>Talk to me about go-to-market in emerging markets, growing revenue from a portfolio you already have, or an idea that sounds boring and makes money. I answer my own email.</p>
+      </div>
+      <div class="mail">
+        <div class="row">
+          <code id="email">sijiadesina@gmail.com</code>
+          <button type="button" id="copy">Copy email</button>
+        </div>
+        <a href="https://www.linkedin.com/in/oluwasijibomi">linkedin.com/in/oluwasijibomi →</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">Oluwasijibomi Adesina · Go-to-market, revenue growth &amp; enterprise sales · Lagos · Kigali · Dublin</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Oluwasijibomi Adesina","alternateName":"Siji Adesina","jobTitle":"Senior App Growth Manager, Emerging Markets","worksFor":{"@type":"Organization","name":"Google"},"address":{"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},"email":"sijiadesina@gmail.com","sameAs":["https://www.linkedin.com/in/oluwasijibomi"],"knowsLanguage":["en","yo"],"knowsAbout":["Go-to-market strategy","Revenue growth","Enterprise sales","App growth marketing","Emerging markets","Market entry","Portfolio strategy","Digital advertising","Fintech operations"],"alumniOf":[{"@type":"EducationalOrganization","name":"African Leadership University"},{"@type":"EducationalOrganization","name":"Hult International Business School"},{"@type":"EducationalOrganization","name":"King's College Lagos"}]}
+</script>
+
+<script>
+(function(){
+  var LEN=[0,152.2,303.6,467.3,621.0,815.2], TOTAL=815.2;
+  var DATA=[
+    ['Before everything','The farm & the garden','Poultry, then catfish, then pigs, and a garden of yam, cocoyam and mango. Feed, weather and market day all ran on one clock. Miss it and you lose the season.',['Money','Time']],
+    ['School years','Katangua market, Lagos','I bought pre-loved clothes at Katangua, had them properly cleaned, and sold them to my classmates at King’s College. My first margin, and my first repeat customers.',['Money','People']],
+    ['2019','Kuda, when it was Kudimoney','My first time inside a company being built. Workstreams to keep moving, partner SLAs to keep honest, and a banking licence to live up to.',['Time','People']],
+    ['2020–22','Kigali, all at once','A degree at ALU, a FabLab to set up, a hall of 40+ nationalities to keep calm, jewellery sourced in Lagos and sold here, three #enjoywithdesh evenings, and a $1M Mastercard Foundation programme to deliver.',['Money','Time','People']],
+    ['2021–22','Research and shipping','Equity research at BLK Capital in Cambridge, where a story had to survive a committee. Then a delivery project at 9jaPay that got the product out the door.',['Money','Time']],
+    ['2022–now','Google, Dublin','Four seats in four years, from associate account manager to app growth across Israel, the Middle East and Africa. Same instinct, bigger field.',['Money','Time','People']]
+  ];
+  var stops=[].slice.call(document.querySelectorAll('.stop'));
+  var prog=document.getElementById('prog');
+  var yrs=document.getElementById('c-yrs'), ttl=document.getElementById('c-ttl'), txt=document.getElementById('c-txt'), les=document.getElementById('c-les');
+  function pick(i){
+    var d=DATA[i];
+    stops.forEach(function(g,n){
+      g.setAttribute('aria-pressed', n===i?'true':'false');
+      g.querySelector('circle').setAttribute('r', n===i?12:10);
+    });
+    prog.style.strokeDashoffset = (TOTAL - Math.max(LEN[i],14)).toFixed(1);
+    yrs.textContent=d[0]; ttl.textContent=d[1]; txt.textContent=d[2];
+    les.innerHTML=''; d[3].forEach(function(l){var e=document.createElement('span');e.textContent=l;les.appendChild(e)});
+  }
+  stops.forEach(function(g,i){
+    g.addEventListener('click',function(){pick(i)});
+    g.addEventListener('mouseenter',function(){pick(i)});
+    g.addEventListener('keydown',function(ev){
+      var k=ev.key, n=null;
+      if(k==='ArrowRight'||k==='ArrowDown') n=Math.min(i+1,stops.length-1);
+      else if(k==='ArrowLeft'||k==='ArrowUp') n=Math.max(i-1,0);
+      else if(k==='Enter'||k===' ') n=i;
+      if(n!==null){ev.preventDefault();pick(n);stops[n].focus()}
+    });
+  });
+  pick(0);
+
+  var btns=document.querySelectorAll('.filter button');
+  var entries=document.querySelectorAll('.entry');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var f=b.dataset.f;
+      btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+      entries.forEach(function(e){e.hidden = f!=='all' && e.dataset.v.split(' ').indexOf(f)<0});
+    });
+  });
+  var c=document.getElementById('copy');
+  c.addEventListener('click',function(){
+    var el=document.getElementById('email');
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);c.textContent='Selected';}
+    try{navigator.clipboard.writeText(el.textContent).then(function(){c.textContent='Copied';setTimeout(function(){c.textContent='Copy email'},1800)},sel)}catch(e){sel()}
+  });
+})();
+</script>
+
+</body>
+</html>
