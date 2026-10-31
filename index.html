@@ -24,7 +24,7 @@ img{max-width:100%}
 /* Layout: an indigo adire band opens with the portrait tagged like market stock; capability bar, then proof, then a priced ledger in two chapters. Fraunces carries the voice, Archivo the argument, Plex Mono the ledger. */
 :root{
   --paper:#edeff4; --surface:#ffffff; --ink:#131a3d; --ink-soft:#4b5376; --rule:#d2d6e2; --rule-soft:#e2e5ee;
-  --indigo:#1b2a66; --indigo-deep:#101845; --on-indigo:#e8ebf7; --on-indigo-dim:#aab3dd;
+  --indigo:#1b2a66; --indigo-deep:#101845; --on-indigo:#e8ebf7; --on-indigo-dim:#bcc4e8;
   --brass:#9a6c15; --tag:#e8b642; --tag-ink:#2a2208; --kola:#8c2f3f;
   --display:"Fraunces",Georgia,"Times New Roman",serif;
   --body:"Archivo","Helvetica Neue",Arial,sans-serif;
@@ -32,11 +32,11 @@ img{max-width:100%}
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0d1130; --surface:#151a3d; --ink:#e7eaf7; --ink-soft:#a8aecd; --rule:#2a3160; --rule-soft:#1e2550;
-  --indigo:#182257; --indigo-deep:#090d26; --on-indigo:#e8ebf7; --on-indigo-dim:#a3abd6;
+  --indigo:#182257; --indigo-deep:#090d26; --on-indigo:#e8ebf7; --on-indigo-dim:#b7bfe4;
   --brass:#e6b14f; --tag:#e8b642; --tag-ink:#2a2208; --kola:#cf8294; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0d1130; --surface:#151a3d; --ink:#e7eaf7; --ink-soft:#a8aecd; --rule:#2a3160; --rule-soft:#1e2550;
-  --indigo:#182257; --indigo-deep:#090d26; --on-indigo:#e8ebf7; --on-indigo-dim:#a3abd6;
+  --indigo:#182257; --indigo-deep:#090d26; --on-indigo:#e8ebf7; --on-indigo-dim:#b7bfe4;
   --brass:#e6b14f; --tag:#e8b642; --tag-ink:#2a2208; --kola:#cf8294; color-scheme:dark}
 
 *{box-sizing:border-box}
@@ -58,12 +58,12 @@ p{margin:0}
              linear-gradient(225deg,currentColor 25%,transparent 25%) 0 0/13px 13px}
 
 /* ---------- Hero ---------- */
-.band{background:var(--indigo);color:var(--on-indigo);position:relative;overflow:hidden}
-.band::before{content:"";position:absolute;inset:0;opacity:.11;pointer-events:none;
+.band{background:linear-gradient(168deg,var(--indigo-deep) 0%,var(--indigo) 52%);color:var(--on-indigo);position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;opacity:.2;pointer-events:none;
   background:
     radial-gradient(circle at 50% 50%, transparent 9px, var(--on-indigo) 10px, var(--on-indigo) 11px, transparent 12px) 0 0/46px 46px,
     radial-gradient(circle at 50% 50%, var(--on-indigo) 2.5px, transparent 3px) 23px 23px/46px 46px;
-  -webkit-mask-image:linear-gradient(105deg,#000 0%,transparent 58%);mask-image:linear-gradient(105deg,#000 0%,transparent 58%)}
+  -webkit-mask-image:radial-gradient(68% 72% at 80% 40%,#000 8%,transparent 72%);mask-image:radial-gradient(68% 72% at 80% 40%,#000 8%,transparent 72%)}
 .nav{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding-block:24px;position:relative;font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase}
 .nav b{font-family:var(--display);font-weight:700;font-size:1.45rem;letter-spacing:-.01em;text-transform:none}
 .nav b span{color:var(--tag)}
@@ -75,8 +75,8 @@ p{margin:0}
 .kicker{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tag)}
 h1{font-size:clamp(2.9rem,7.4vw,5.6rem);line-height:.98;font-weight:700;letter-spacing:-.03em}
 h1 em{font-style:italic;color:var(--tag);font-weight:600}
-.sub{font-family:var(--mono);font-size:clamp(.82rem,1.4vw,.95rem);letter-spacing:.04em;line-height:1.6;color:var(--on-indigo);max-width:48ch}
-.lede{max-width:50ch;font-size:1.1rem;color:var(--on-indigo-dim)}
+.sub{font-family:var(--body);font-weight:500;font-size:clamp(1.02rem,1.7vw,1.2rem);line-height:1.5;color:var(--on-indigo);max-width:46ch;border-left:2px solid var(--tag);padding-left:16px}
+.lede{max-width:52ch;font-size:1.12rem;line-height:1.62;color:var(--on-indigo-dim)}
 .lede strong{font-weight:500;color:var(--on-indigo)}
 .portrait{margin:0;justify-self:end;width:100%;max-width:360px}
 .portrait .shot{position:relative}
@@ -213,6 +213,7 @@ section{padding-block:76px}
 footer{padding-block:34px 46px;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
 
 @media (max-width:900px){
+  .band::before{opacity:.09}
   .hero{grid-template-columns:minmax(0,1fr);gap:40px}
   .portrait{justify-self:start;max-width:300px;margin-left:20px}
   .capbar{grid-template-columns:repeat(2,minmax(0,1fr))}
